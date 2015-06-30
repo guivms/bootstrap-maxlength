@@ -476,7 +476,7 @@
           }
         });
 
-        currentInput.on('input', function () {
+        currentInput.keyup('input', function () {
           var maxlength = getMaxLength(currentInput),
             remaining = remainingChars(currentInput, maxlength),
             output = true;
